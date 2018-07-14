@@ -140,7 +140,7 @@ function answerPage(){
 
 	var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
 	var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
-	//giphy api
+	//Adding giphy api
 	var giphyURL = "https://media.giphy.com/media/3o84smfKEfFdgx3oAM/giphy.gif" + search[currentQuestion] + "&limit=1&rating=g&api_key=dc6zaTOxFJmzC"
 	$.ajax({url: giphyURL, method: 'GET'}).done(function(giphy){
 		var currentGif = giphy.data;

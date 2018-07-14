@@ -1,10 +1,9 @@
 
 
-
 body{
 	background: url(http://drinkinggamezone.com/img/games/movie/step-brothers.jpg);
 	font-family: 'Archivo Black', sans-serif;
-	font-size: 25px;
+	font-size: 40px;
 }
 
 header{
@@ -20,14 +19,14 @@ header{
 	margin-top: 100px;
 }
 .btn-primary:hover, .reset:hover{
-	background-color: #202364;
+	background-color: #322064;
 }
 
 .container{
 	margin-top: 50px;
 	text-align: center;
 	height: 100%;
-	width: 700px;
+    width: 700px;
 }
 
 h2, #message, #finalMessage{
@@ -35,7 +34,7 @@ h2, #message, #finalMessage{
 }
 
 .thisChoice:hover{
-	background-color: #202364;
+	background-color: #5e2064;
 	color: white;
 	padding: 10px;
 }
