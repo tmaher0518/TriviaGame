@@ -59,7 +59,7 @@ var triviaQuestions = [{
 	answerList: ["Shark Week", "American Idol", "Soul Train","True Blood"],
 	answer: 0
 }];
-var search = ['sully+monsters+inc', 'bugs+life', 'toy+story+andy', 'brave+bear', 'wall-e+plant', 'inside+out+emotions', 'the+incredibles+nemesis', 'finding+nemo', 'lightning+mcqueen', 'up+russell', 'the+good+dinosaur', 'monsters+university', 'toy+story+woody','bing+bong','ratatouille'];
+var search = ['dale+dragon', 'kung-fu+brennan+green','brennan+fergie+jesus','derek+sweetchild']
 var currentQuestion; var correctAnswer; var incorrectAnswer; var unanswered; var seconds; var time; var answered; var userSelect;
 var messages = {
 	correct: "Yep, that's right!",
@@ -141,7 +141,7 @@ function answerPage(){
 	var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
 	var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
 	//giphy api
-	var giphyURL = "http://api.giphy.com/v1/gifs/search?q=pixar+" + search[currentQuestion] + "&limit=1&rating=g&api_key=dc6zaTOxFJmzC"
+	var giphyURL = "https://media.giphy.com/media/3o84smfKEfFdgx3oAM/giphy.gif" + search[currentQuestion] + "&limit=1&rating=g&api_key=dc6zaTOxFJmzC"
 	$.ajax({url: giphyURL, method: 'GET'}).done(function(giphy){
 		var currentGif = giphy.data;
 		$.each(currentGif, function(index,value){
